@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+.ul1 li{ float:left; padding:5px 5px; margin:10px 10px; background:#ccc;}
+.ul2{ width:150px; border:1px solid #ccc; position:absolute; top:0; left:0; display:none;}
+.ul2 li{ height:30px; text-align:center; line-height:30px; background:#ccc; border-bottom:1px dashed #999;}
+</style>
+<script>
+window.onload=function(){
+	var aUl1=document.getElementById('ul1');
+	var aLi1=aUl1.getElementsByTagName('li');
+	var aUl2=document.getElementById('ul2');
+	var aLi2=aUl2.getElementsByTagName('li');
+	for(var i=0;i<aLi2.length;i++)
+	{
+		aLi2[i].onmouseover=function(){
+			this.style.background='#eee';	
+		};
+		aLi2[i].onmouseout=function(){
+			this.style.background='#ccc';	
+		};
+		
+	}
+	document.oncontextmenu=function(ev){
+		var oEvent=ev || event;
+		aUl2.style.display='block';	
+		aUl2.style.left=oEvent.clientX+'px';
+		aUl2.style.top=oEvent.clientY+'px';
+		return false;
+	};
+	for(var i=0;i<aLi1.length;i++)
+	{
+		aLi1[i].oncontextmenu=function(){	
+			var _this=this;
+			aLi2[0].onclick=function (){
+				_this.parentNode.removeChild(_this);
+			};
+			aLi2[1].onclick=function (){
+				window.location.reload();
+			};
+			aLi2[2].onclick=function (){
+				_this.style.background='red';
+			};
+			aLi2[3].onclick=function (){
+				_this.style.background='green';
+			};
+			aLi2[4].onclick=function (){
+				_this.style.background='yellow';
+			};
+			aLi2[5].onclick=function (){
+				_this.style.background='blue';
+			};
+		}
+	}
+	document.onclick=function(){
+		aUl2.style.display='none';	
+	}
+};
+</script>
+</head>
+
+<body>
+<ul class="ul1" id="ul1">
+	<li>只能输入英文字母，排除删除键1</li>
+	<li>只能输入英文字母，排除删除键2</li>
+	<li>只能输入英文字母，排除删除键3</li>
+	<li>只能输入英文字母，排除删除键4</li>
+	<li>只能输入英文字母，排除删除键5</li>
+	<li>只能输入英文字母，排除删除键6</li>
+	<li>只能输入英文字母，排除删除键7</li>
+</ul>
+<ul class="ul2" id="ul2">
+	<li>删除</li>
+	<li>刷新</li>
+	<li>变红色</li>
+	<li>变绿色</li>
+	<li>变黄色</li>
+	<li>变蓝色</li>
+</ul>
+</body>
+</html>

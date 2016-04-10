@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+div{ width:100px; height:100px; background:#fff; position:absolute; top:50%; left:50%; margin-left:-50px; margin-top:-50px;}
+</style>
+<script>
+window.onload = function(){
+	var oS = document.getElementById('sel');
+	var oTx = document.getElementById('txt');
+	var oBtn = document.getElementById('btn');
+	var oDiv = document.getElementById('div1');
+	oBtn.onclick = function(){
+		var n=oTx.value;
+		var n1=oS.value;
+		oDiv.style[n1]=n+'px';
+		oTx.value='';
+	};
+};
+</script>
+</head>
+
+<body style="background:#444;">
+	<select id="sel">
+		<option value="width">宽度</option>
+		<option value="height">高度</option>
+		<option value="background">颜色</option>
+		<option value="opacity">透明</option>
+		<option value="margin">margin</option>
+	</select>
+	<input type="text"  id="txt" value=""/>
+	<input type="button"  value="变" id="btn"/>
+	<div id="div1"></div>
+</body>
+</html>

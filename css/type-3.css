@@ -1,0 +1,249 @@
+* {
+	margin:0;
+	padding:0
+}
+body {
+	background:#32353a;
+	font-size:15px;
+	font-weight:300;
+	color:#b7bcbe;
+	padding:20px
+}
+.box {
+	width:100%;
+	height:900px;
+	overflow:hidden
+}
+.header {
+	width:1090px;
+	height:156px;
+	margin:0 auto;
+	margin-bottom:80px;
+	padding:0 40px;
+	position:relative
+}
+.header-wrapper {
+	border-bottom:2px solid #46494f;
+	padding:60px 0;
+	position:relative;
+	top:-160px;
+	left:0
+}
+h1 {
+	float:left;
+	margin-left:30px
+}
+h1 a {
+	font-size:30px;
+	font-weight:bold;
+	color:#fff
+}
+h1:hover a {
+	border-bottom:5px solid #fff;
+	-webkit-transition:.5s all;
+	color:#fff
+}
+.nav {
+	float:right
+}
+.nav li {
+	float:left;
+	height:33px;
+	margin:0 9px
+}
+.nav li a {
+	color:#fff;
+	display:block;
+	line-height:33px;
+	padding:0 16px 0 15px
+}
+.nav li.active {
+	background:#4e91c9;
+	border:1px solid #fff
+}
+.main-1,.main-2,.main-3,.main-4 {
+	display:none
+}
+#main .actives {
+	display:block
+}
+.example {
+	width:1090px;
+	margin:0 auto
+}
+.example-header {
+	width:100%;
+	text-align:center;
+	color:#fff;
+	margin-bottom:100px
+}
+#em-hd-h2 {
+	font-size:36px;
+	position:relative;
+	top:0;
+	left:-900px;
+	margin-bottom:30px
+}
+#em-hd-p {
+	font-size:20px;
+	position:relative;
+	top:0;
+	left:1100px
+}
+.holder-js {
+	position:relative;
+	margin-left:-30px;
+	margin-bottom:30px
+}
+.holder-js div {
+	width:337px;
+	height:250px;
+	border:2px solid #1a1c1f;
+	float:left;
+	opacity:0;
+	margin-left:30px;
+	-moz-box-shadow:5px 5px 10px #1a1c1f;
+	-o-box-shadow:5px 5px 10px #1a1c1f;
+	-ms-box-shadow:5px 5px 10px #1a1c1f;
+	-webkit-box-shadow:5px 5px 10px #1a1c1f;
+	position:relative;
+	overflow:hidden
+}
+.hd-UFO {
+	background:url(../interlinkage/img/ufo.png) no-repeat 0 50px;
+	background-size:contain
+}
+.hd-lht {
+	background:url(../interlinkage/img/lzt.png) no-repeat 0 50px;
+	background-size:contain
+}
+.hd-ch {
+	background:url(../interlinkage/img/ch.png) no-repeat 5px 50px;
+	background-size:contain
+}
+.holder-js div p {
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:0;
+	background:rgba(0,0,0,0.5);
+	width:100%;
+	line-height:250px;
+	text-align:center;
+	color:#fff;
+	font-size:24px
+}
+.holder-js div a {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0
+}
+.holder-em {
+	position:relative;
+	margin-left:-20px
+}
+.holder-em div {
+	float:left;
+	width:224px;
+	height:181px;
+	border:2px solid #1a1c1f;
+	opacity:0;
+	margin-bottom:30px;
+	margin-left:40px;
+	background-size:contain;
+	overflow:hidden;
+	position:relative
+}
+.holder-em div p {
+	background:rgba(0,0,0,0.5);
+	width:224px;
+	height:0;
+	position:absolute;
+	bottom:0;
+	text-align:center;
+	line-height:181px;
+	font-size:20px;
+	color:#fff
+}
+.holder-em div a {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0
+}
+.hd-djs {
+	background:url(../interlinkage/img/progress%20bar.png) no-repeat 0 20px
+}
+.hd-zs {
+	background:url(../interlinkage/img/zs.png) no-repeat 0 30px
+}
+.hd-y {
+	background:url(../interlinkage/img/circle.png) no-repeat 13px 0
+}
+.hd-zpq {
+	background:url(../interlinkage/img/photo%20wall.png) no-repeat 10px 0
+}
+.hd-fdj {
+	background:url(../interlinkage/img/fdj.png) no-repeat 10px 20px
+}
+.hd-tx {
+	background:url(../interlinkage/img/tanxingdaohang.png) no-repeat 0 50px
+}
+.hd-3D {
+	background:url(../interlinkage/img/3D.jpg) no-repeat 0 20px
+}
+.hd-dj {
+	background:url(../interlinkage/img/ghbj.png) no-repeat 0 20px
+}
+.b_top {
+	width:100%;
+	height:20px;
+	background:#1f2122;
+	position:fixed;
+	top:0;
+	left:0
+}
+.b_left {
+	width:20px;
+	height:100%;
+	background:#1f2122;
+	position:fixed;
+	top:0;
+	left:0
+}
+.b_bottom {
+	width:100%;
+	height:20px;
+	background:#1f2122;
+	position:fixed;
+	bottom:0;
+	left:0
+}
+.b_right {
+	width:20px;
+	height:100%;
+	background:#1f2122;
+	position:fixed;
+	top:0;
+	right:0
+}
+.t_jiao {
+	background:url(../interlinkage/img/shape-1.png) no-repeat 0 0;
+	width:50px;
+	height:50px;
+	position:fixed;
+	top:20px;
+	right:20px
+}
+.x_jiao {
+	background:url(../interlinkage/img/shape-2.png) no-repeat 0 0;
+
+	width:50px;
+	height:50px;
+	position:fixed;
+	bottom:20px;
+	left:20px
+}

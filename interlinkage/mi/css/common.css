@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/*清除默认样式*/
+body,div,h1,h12,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,li,span,a,b,em,i,strong,img{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+i{font-style:normal;}
+b{font-weight:normal;}
+em{font-style:normal;}
+
+.fl{float:left;}
+.fr{float:right;}
+.clearFix:after{content:"";display:block;clear:both;}
+
+
+body{font-size:12px;font-family:"微软雅黑";}
+.wrap{width:1226px;margin:0 auto;overflow:hidden;}

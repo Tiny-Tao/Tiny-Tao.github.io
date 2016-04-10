@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.box{ width:500px; height:500px; background:#4a5374; margin:0 auto; border-radius:20%; border:5px solid #5c6174; position:relative;-webkit-transform:translate(0px,0px) rotate(315deg);box-shadow:30px 30px 100px #80979d inset; position:fixed; top:50%; margin-top:-250px; left:50%; margin-left:-250px;}
+.div1 { width:130px; height:130px; background:#7cbcea; position:absolute; top:35px; left:35px; border-radius:10%;}
+.div2 { width:130px; height:130px; background:#7cbcea; position:absolute; top:35px; left:185px; border-radius:10%;}
+.div3 { width:130px; height:130px; background:#7cbcea; position:absolute; top:35px; left:335px; border-radius:10%;}
+.div4 { width:130px; height:130px; background:#fff; position:absolute; top:185px; left:35px; border-radius:10%;-webkit-transition:all 1s;}
+.div5 { width:130px; height:130px; background:#7cbcea; position:absolute; top:185px; left:185px; border-radius:10%;}
+.div6 { width:100px; height:100px; background:#bf85b5; position:absolute; top:200px; left:350px; border-radius:10%;-webkit-transform:translate(0px,0px) rotate(315deg);transition:all 0.5s;}
+.div7 { width:130px; height:130px; background:#7cbcea; position:absolute; top:335px; left:35px; border-radius:10%;}
+.div8 { width:130px; height:130px; background:#7cbcea; position:absolute; top:335px; left:185px; border-radius:10%;}
+.div9 { width:130px; height:130px; background:#fff; position:absolute; top:335px; left:335px; border-radius:10%;-webkit-transition:all 1s;}
+
+
+.div5:hover{ -webkit-animation:ss 0.5s infinite;}
+@-webkit-keyframes ss{
+			from{
+				-webkit-transform:rotate(0deg);		
+			}
+			to{
+				-webkit-transform:rotate(360deg);		
+			}
+		}
+.div4:hover{-webkit-transform:translate(0px,0px) rotate(360deg);}
+.div6:hover{ transform:scale(1.3);}
+.div9:hover{-webkit-transform:translate(0px,0px) rotate(360deg);}
+</style>
+</head>
+
+<body style="background:#444;">
+	<div class="box">
+    	<div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+        <div class="div9"></div>
+    </div>
+</body>
+</html>

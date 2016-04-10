@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+#box{ width:400px; height:225px; margin:100px auto; position:relative; overflow:hidden;}
+#box ul{ position:absolute; top:0; left:0;}
+#box ul li{ width:400px; height:225px; float:left; position:relative;}
+#box ol{ position:absolute; left:50%; bottom:0; width:240px; margin-left:-120px;}
+#box ol li{ float:left;width:60px; height:20px; background:pink; margin:10px; position:relative;}
+#box ol li span{ width:0; height:100%; background:#eee; position:absolute;}
+</style>
+<script src="getStyle.js"></script>
+<script src="move.js"></script>
+<script src="1.js"></script>
+
+<script>
+window.onload=function(){
+	md();	
+};
+</script>
+</head>
+
+<body>
+<div id="box">
+	<ul>
+    	<li><img src="images/0.jpg" width="400" /></li>
+    	<li><img src="images/1.jpg" width="400" /></li>
+    	<li><img src="images/2.jpg" width="400" /></li>
+    </ul>
+    <ol>
+    	<li><span></span></li>
+    	<li><span></span></li>
+    	<li><span></span></li>
+    </ol>
+</div>
+</body>
+</html>

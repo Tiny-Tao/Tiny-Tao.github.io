@@ -1,0 +1,309 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	background: #32353a;
+	font-size: 15px;
+	font-weight: 300;
+	color: #b7bcbe;
+	padding: 20px
+}
+
+.box {
+	width: 100%;
+	height: 1200px;
+	overflow: hidden
+}
+
+.header {
+	width: 1090px;
+	height: 156px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+	padding: 0 40px;
+	position: relative
+}
+
+.header-wrapper {
+	border-bottom: 2px solid #46494f;
+	padding: 60px 0;
+	position: relative;
+	top: -160px;
+	left: 0
+}
+
+h1 {
+	float: left;
+	margin-left: 30px
+}
+
+h1 a {
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff
+}
+
+h1:hover a {
+	border-bottom: 5px solid #fff;
+	-webkit-transition: .5s all;
+	color: #fff
+}
+
+.nav {
+	float: right
+}
+
+.nav li {
+	float: left;
+	height: 33px;
+	margin: 0 9px
+}
+
+.nav li a {
+	color: #fff;
+	display: block;
+	line-height: 33px;
+	padding: 0 16px 0 15px
+}
+
+.nav li.active {
+	background: #4e91c9;
+	border: 1px solid #fff
+}
+
+.main-1,.main-2,.main-3,.main-4 {
+	display: none
+}
+
+#main .actives {
+	display: block
+}
+
+.main-box {
+	width: 1090px;
+	margin: 0 auto;
+	padding: 0 40px;
+	position: relative
+}
+
+.home-intro {
+	text-align: center;
+	margin-bottom: 200px;
+	position: relative
+}
+
+.home-intro h2 {
+	color: #fff;
+	font-size: 48px;
+	margin-bottom: 30px;
+	position: relative;
+	top: 0;
+	left: -810px;
+	z-index: 10
+}
+
+.intro {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: #888;
+	position: relative;
+	top: 0;
+	right: -1000px
+}
+
+.intro p {
+	font-size: 16px;
+	color: #888;
+	line-height: 35px
+}
+
+.below {
+	width: 50px;
+	height: 50px;
+	background: url(../interlinkage/img/image-sprite.png) no-repeat -5px -250px;
+	position: absolute;
+	top: 260px;
+	left: 50%;
+	margin-left: -25px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity:0)
+}
+
+.main-box .show {
+	width: 50px;
+	height: 50px;
+	background: url(../interlinkage/img/image-sprite.png) no-repeat -111px -196px;
+	position: absolute;
+	top: 260px;
+	left: 50%;
+	margin-left: -25px;
+	cursor: pointer
+}
+
+.Adhere {
+	width: 1090px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	position: relative;
+	top: 0;
+	height: 440px
+}
+
+.Adhere-victory {
+	width: 430px;
+	height: 400px;
+	background: #46494f;
+	position: absolute;
+	top: 600px;
+	left: 0;
+	float: left;
+	padding: 20px 50px
+}
+
+.Adhere-victory h2 {
+	font-size: 36px;
+	color: #fff;
+	font-size: 30px;
+	-moz-text-shadow: 2px 3px 5px #fff;
+	-o-text-shadow: 2px 3px 5px #fff;
+	-ms-text-shadow: 2px 3px 5px #fff;
+	-webkit-text-shadow: 2px 3px 5px #fff;
+	height: 60px;
+	text-align: center
+}
+
+.ative {
+	width: 400px;
+	line-height: 30px
+}
+
+.ative span {
+	opacity: 0;
+	font-size: 16px;
+	color: #fff;
+	filter: alpha(opacity:0)
+}
+
+.Adhere-right {
+	width: 530px;
+	height: 440px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.Adhere-right .C {
+	overflow: hidden;
+	width: 244px;
+	height: 181px;
+	border: 3px solid #1a1c1f;
+	float: left;
+	position: absolute;
+	-moz-box-shadow: 5px 5px 10px #1a1c1f;
+	-o-box-shadow: 5px 5px 10px #1a1c1f;
+	-ms-box-shadow: 5px 5px 10px #1a1c1f;
+	-webkit-box-shadow: 5px 5px 10px #1a1c1f
+}
+
+.Adhere-right .C p {
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	line-height: 180px;
+	position: absolute;
+	top: 0;
+	left: -246px;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity:50);
+	width: 100%;
+	height: 100%
+}
+
+.Adhere-right .C a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.Adhere-right .left_1 {
+	top: 0;
+	left: 700px
+}
+
+.Adhere-right .right_1 {
+	right: -400px;
+	top: 0
+}
+
+.Adhere-right .left_2 {
+	bottom: 30px;
+	left: 700px
+}
+
+.Adhere-right .right_2 {
+	bottom: 30px;
+	right: -400px
+}
+
+.b_top {
+	width: 100%;
+	height: 20px;
+	background: #1f2122;
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+.b_left {
+	width: 20px;
+	height: 100%;
+	background: #1f2122;
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+.b_bottom {
+	width: 100%;
+	height: 20px;
+	background: #1f2122;
+	position: fixed;
+	bottom: 0;
+	left: 0
+}
+
+.b_right {
+	width: 20px;
+	height: 100%;
+	background: #1f2122;
+	position: fixed;
+	top: 0;
+	right: 0
+}
+
+.t_jiao {
+	background: url(../interlinkage/img/shape-1.png) no-repeat 0 0;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 20px;
+	right: 20px
+}
+
+.x_jiao {
+	background: url(../interlinkage/img/shape-2.png) no-repeat 0 0;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px
+}

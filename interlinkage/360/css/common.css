@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,h1,h12,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,li,span,a,b,em,i,strong,img{padding:0;margin:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+i{font-style:normal;}
+img,input,select,textarea{vertical-align:top;}
+textarea,input,select{outline:none;}
+textarea{resize:none;}
+
+/*解决ie6双边距问题*/
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.clearFix:after{content:"";display:block;clear:both;}
+
+body{font-family:"微软雅黑";background:#f4f4f4;}

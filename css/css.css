@@ -1,0 +1,64 @@
+@charset "utf-8";
+/*清除默认样式*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,input,textarea,th,td{margin:0;padding:0;border:0;line-height:100%;font-size:12px;}
+button,input,select,textarea{font:12px/1.5 tahoma,arial,'微软雅黑';color:#b7bcbe;outline:none; border:0 none; background:#FFF;line-height:100%; font-size:12px;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}/*h标签字体默认大小跟着父级来*/
+h2{ font-size:18px;}
+h3{ font-size:16px;}
+li{list-style:none;}
+table{border-collapse:collapse; border-spacing:0;}
+textarea{resize:none;}
+
+i,em{ font-style: normal;line-height:100%}
+b,strong{font-weight:normal;line-height:100%}
+input::-ms-clear{display:none;}
+a{color:#b7bcbe; text-decoration:none;line-height:100%;font-size:12px;}
+a:hover{text-decoration:none;color:#14815f;}/*此处不用加line-height:100%在IEtest下会有一个hover晃动的效果*/
+
+
+img{border:0 none;vertical-align:top}
+img{border:0 none;}/*去除IE6下有链接图片的蓝色边框*/
+
+
+
+
+/*清除浮动*/
+.clearfix:after{display:block;clear:both;content:'';}
+.clearfix{zoom:1;}
+
+
+/*文字强制不换行：white-space:nowrap
+
+单行省略：white-space:nowrap; overflow:hidden;text-overflow:ellipsis ;font-family:Verdana;省略号后面再加一个英文字体。为了兼容让浏览器的省略号都是一样的
+*/
+
+
+/*透明度兼容
+opacity:0.3
+filter:alpha(opacity:30)*/
+
+
+
+
+
+/*通用样式开始*/
+
+body{font-family: "Microsoft Yahei","Hiragino Sans GB", Geneva, sans-serif; color:#666666; }
+.comWidth{width:970px; margin:0 auto;}
+.fl{float:left;display:inline}
+.fr{float:right;display:inline}
+.show{display:block;}
+.pt{padding-top:20px;}
+.mb{margin-bottom:20px;}
+.mb10{margin-bottom:10px;}
+.mr{margin-right:20px;}
+
+/*img变成块儿去除3像素bug*/
+.imgblock{display:block}/*或者是vertical-align:top 让图片纵向向上对齐/或者是overflow:hidden/*/
+
+/*a包img的bug解决*/
+a_imgbox{ display:inline-block;}
+
+
+
+/*通用样式结束*/

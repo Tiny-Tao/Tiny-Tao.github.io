@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+
+.top{width:1200px;height:30px;border-bottom:1px solid #eee;}
+.top ul{overflow:hidden;}
+.top li{margin-top:7px;color:#666;padding:0px 16px;height:20px;line-height:20px;border-left:1px dotted #ccc;margin-left:-1px;}
+.top i{background:url(../images/weixin.png) no-repeat;height:16px;width:20px;margin-top:2px;margin-right:6px;}
+.top .qq{background:url(../images/qq.png) no-repeat;}
+.top .gouwuche{background:url(../images/gouwuche.png) no-repeat;}
+.top .dingdan{background:url(../images/dingdan.png) no-repeat;}
+.top em{width:19px;height:14px;color:#FFF;background:#f69;text-align:center;line-height:14px;font-style:normal;margin-left:3px;margin-top:3px;}
+
+
+
+
+/*logo search*/
+h1{background:url(../images/LOGO.png) no-repeat ;width:117px;height:43px;text-indent:-9999em;margin-top:40px;}
+.logo_text{background:url(../images/LOGO-text.png) no-repeat; width:144px;height:20px;margin-top:54px;margin-left:15px;}
+.search img{width:519px;height:56px;float:left;margin-top:21px;margin-left:84px;}
+.app_logo{background:url(../images/higo_logo.png) no-repeat;width:143px;height:45px;margin-top:39px;}
+
+
+
+/*nav导航*/
+.nav {padding-bottom:17px;border-bottom:2px solid #f69;}
+.nav ul{margin-left:22px;}
+.nav ul li{margin-top:53px ;margin-right:44px;}
+.nav ul li a{font-size:14px;color:#333;}
+.nav ul li a:hover{color:#ff6699;}
+
+
+
+/*sider_bar banner*/
+.sider_bar{width:238px;height:572px;border:1px solid #e6e6e6;line-height:100%;}
+.sider_bar h3{color:#fe7b9d;font-size:12px;}
+.sider_bar a{color:#727272;margin-right:14px;float:left;}
+.sider_bar a:hover{color:#ff6699;}
+.sider_bar li{height:100px;padding-top:15px;margin-left:21px;margin-right:20px;border-bottom:1px dotted #e6e6e6;}
+.sider_bar li div{line-height:24px;margin-top:6px;}
+
+.banner_top{width:959px;height:420px;position:relative;}
+.banner_top .prev, .next{position:absolute;width:100px;height:200px;background:#CCC;}
+.banner_top .prev{left:0;top:50%;margin-top:-100px;}
+.banner_top .next{right:0;top:50%;margin-top:-100px;}
+.banner_top .btn{width:300px;height:50px;position:absolute;left:50%;margin-left:-150px;bottom:30px;}
+.banner_top .btn span{float:left;width:50px;height:50px;background:red;margin-left:10px;}
+
+.banner .banner_bottom{margin-top:9px;}
+.banner .banner_bottom a{float:left;margin-left:10px;}
+
+
+
+/*in fashion 正在流行 新款大促*/
+.fash_top{height:20px;margin-top:45px;}
+.fash_top h4{font-size:20px;color:#666;}
+.fash_top h5{font-size:12px;color:#999;margin-top:10px;margin-left:10px;}
+.fash_top div{float:left;width:982px;height:20px;line-height:20px;border-bottom:1px solid #ededed;margin-top:7px;background:url(../images/huigu_bg.png) no-repeat 978px 8px;}
+.fash_top div a{font-size:12px;color:#666;margin-right:8px;}
+
+.fash_bottom {width:1290px;overflow:hidden;}
+.fash_bottom ul{margin-top:19px;}
+.fash_bottom ul li{width:406px;}
+.fash_bottom ul li .pic1{margin-right:2px;}
+.fash_bottom ul li .pic2{margin-bottom:2px;}
+
+/*insane new style疯狂新款*/
+.insane_new_style_t{height:20px;margin-top:45px;}
+.insane_new_style_t h4{font-size:20px;color:#666;}
+.insane_new_style_t h5{font-size:12px;color:#999;margin-top:10px;margin-left:10px;}
+.insane_new_style_t div{float:left;width:1037px;height:20px;line-height:20px;border-bottom:1px solid #ededed;margin-top:7px;}
+
+
+.insane_new_style_b  {width:1290px;overflow:hidden;}
+.insane_new_style_b  ul{margin-top:19px;}
+.insane_new_style_b  ul li{width:407px;}
+.insane_new_style_b  ul li .pic1{margin-right:20px;}
+
+
+/*new product select 新品精选*/
+.new_product_s_t{height:20px;margin-top:45px;}
+.new_product_s_t h4{font-size:20px;color:#666;}
+.new_product_s_t h5{font-size:12px;color:#999;margin-top:10px;margin-left:10px;}
+.new_product_s_t div{float:left;width:999px;height:20px;line-height:20px;border-bottom:1px solid #ededed;margin-top:7px;background:url(../images/huigu_bg.png) no-repeat 994px 8px;}
+.new_product_s_t div a{font-size:12px;color:#666;margin-right:8px;}
+
+.new_product_s_b {width:1290px;overflow:hidden;}
+.new_product_s_b ul{margin-top:19px;}
+.new_product_s_b ul li{margin-right:20px;margin-bottom:42px;}
+
+.new_product_s_b ul li p{margin-top:19px;background:url(../images/heart_bg.png) no-repeat 185px;}
+.new_product_s_b ul li i{color:#ff6699;font-size:13px;}
+.new_product_s_b ul li b{color:#9e9d9d;font-size:9px;}
+.new_product_s_b ul li span{color:#666;font-size:12px;display:block;margin-top:10px;}
+
+
+/*desire 明星同款*/
+.desire_t{height:20px;}
+.desire_t h4{font-size:20px;color:#666;}
+.desire_t h5{font-size:12px;color:#999;margin-top:10px;margin-left:10px;}
+.desire_t div{float:left;width:950px;height:20px;line-height:20px;border-bottom:1px solid #ededed;margin-top:7px;background:url(../images/huigu_bg.png) no-repeat 945px 8px;}
+.desire_t div a{font-size:12px;color:#666;margin-right:8px;}
+
+.desire_b  {width:1290px;overflow:hidden;}
+.desire_b  ul{margin-top:19px;}
+.desire_b  ul li{width:387px;margin-right:20px;}
+.desire_b  ul li p{font-size:11px;color:#ff66a6;display:inline-block;margin-top:23px;}
+.desire_b  ul li i{font-size:14px;margin-left:12px;}
+.desire_b  ul li b{font-size:12px;color:#999;text-decoration:line-through;margin-left:27px;}
+.desire_b  ul li div{font-size:14px;color:#666;margin-top:11px;}
+.desire_b  ul li span{font-size:12px;color:#999;display:inline-block;margin-top:11px;line-height:23px;}
+
+/*fashion beauty 时尚美妆*/
+.fash_beauty_t{height:20px;margin-top:45px;}
+.fash_beauty_t h4{font-size:20px;color:#666;}
+.fash_beauty_t h5{font-size:12px;color:#999;margin-top:10px;margin-left:10px;}
+.fash_beauty_t div{float:left;width:982px;height:20px;line-height:20px;border-bottom:1px solid #ededed;margin-top:7px;background:url(../images/huigu_bg.png) no-repeat 978px 8px;}
+.fash_beauty_t div a{font-size:12px;color:#666;margin-right:8px;}
+
+
+.fash_beauty_b  {width:1290px;overflow:hidden;}
+.fash_beauty_b  ul{margin-top:19px;}
+.fash_beauty_b  ul li{width:387px;margin-right:20px;}
+.fash_beauty_b  ul li i{font-size:14px;color:#ff6fa1;display:inline-block;margin-top:23px;}
+.fash_beauty_b  ul li div{font-size:14px;color:#666;margin-top:12px;}
+.fash_beauty_b  ul li span{font-size:12px;color:#999;line-height:23px;}
+.fash_beauty_b  ul li p{font-size:12px;color:#ff6699;background:url(../images/bg.png) no-repeat 5px; padding-left:40px;margin-top:13px;}
+.fash_beauty_b  ul li b{margin-right:12px;}
+
+/*good store recommand*/
+.good_store_r_t{height:20px;margin-top:45px;}
+.good_store_r_t h4{font-size:20px;color:#666;}
+.good_store_r_t h5{font-size:12px;color:#999;margin-top:10px;margin-left:10px;}
+.good_store_r_t div{float:left;width:999px;height:20px;line-height:20px;border-bottom:1px solid #ededed;margin-top:7px;background:url(../images/huigu_bg.png) no-repeat 994px 8px;}
+.good_store_r_t div a{font-size:12px;color:#666;margin-right:8px;}
+
+.good_store_r_c {width:1200px;}
+.good_store_r_c p{text-align:center;}
+.good_store_r_c p a{margin-right:42px;width:65px;font-size:16px;text-align:center;display:inline-block;margin-top:20px;margin-bottom:20px;border-bottom:2px solid #FFF;}
+.good_store_r_c p a:hover{color:#f69;border-bottom:2px solid #f69;}
+
+
+.good_store_r_b {width:1293px;}
+.good_store_r_b ul li{margin-right:20px;}
+.good_store_r_b ul li .pic1{margin-right:2px;}
+.good_store_r_b ul li .pic2{margin-bottom:2px;}
+.good_store_r_b ul li div p{font-size:21px;color:#666;margin-top:20px;}
+.good_store_r_b ul li div{width:387px;text-align:center;}
+.good_store_r_b ul li div div{font-size:12px;color:#999;margin-top:9px;}
+.good_store_r_b ul li div i{font-size:12px;color:#747474;margin-right:4px;}
+.good_store_r_b ul li div b{font-size:9px;color:#ff6699;margin-right:24px;}
+.good_store_r_b ul li div span{margin-top:13px;display:inline-block;}
+
+
+
+/*footer底部部分*/
+
+
+.footer{width:1200px;background:#f5f5f5;padding-top:35px;}
+
+/*1.左上角部分*/
+.footer .f_t .f_t_l{width:236px;color:#666;background:url(../images/phone.png) no-repeat;}
+.footer .f_t .f_t_l p{margin-left:48px;}
+.footer .f_t .f_t_l .tel{font-size:14px;margin-bottom:14px;}
+.footer .f_t .f_t_l .ser_tel,.time{font-size:12px;margin-bottom:12px;}
+
+/*2.中间部分*/
+.footer .f_t .f_t_c{color:#666;}
+.footer .f_t .f_t_c ul li{margin-right:50px;}
+.footer .f_t .f_t_c .attention{font-size:16px;margin-bottom:12px;} 
+.footer .f_t .f_t_c .sina,.qq_space,.tecent_weibo{font-size:12px;margin-bottom:10px;padding-left:22px;} 
+.footer .f_t .f_t_c .sina{background:url(../images/xinlang.png) no-repeat;}
+.footer .f_t .f_t_c .qq_space{background:url(../images/qq_space.png) no-repeat;}
+.footer .f_t .f_t_c .tecent_weibo{background:url(../images/Tecent_microblock.png) no-repeat;}
+
+/*3.右边部分*/
+.footer .f_t .f_t_r{width:450px;height:180px;color:#666;background:url(../images/micro_letter.png) no-repeat 0 36px; }
+.footer .f_t .f_t_r p{font-size:16px;}
+
+/*链接部分*/
+.footer .f_c{width:1200px;height:30px;border-bottom:1px solid #dddddd;border-top:1px solid #dddddd;}
+.footer .f_c .friend_link{line-height:30px;margin-left:11px;}
+.footer .f_c .friend_link span{color:#666;font-size:12px;margin-right:7px;}
+.footer .f_c .friend_link span a:hover{color:#f69;}
+
+
+.footer .copyright{font-size:12px;color:#666;margin-top:15px;}
+.footer .copyright span {margin-right:7px;line-height:25px;}

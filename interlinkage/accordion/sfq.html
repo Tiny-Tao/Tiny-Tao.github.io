@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+#box{ width:840px; height:305px; margin:100px auto; position:relative;overflow:hidden;}
+#box li{ width:840px; height:305px; position:absolute; top:0; left:0;}
+#box li span{ width:30px; height:100%; text-align:center; font-size:16px; position:absolute; top:0; left:0;}
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function(){
+	var oBox=document.getElementById('box');	
+	var aLi=document.getElementsByTagName('li');
+	
+	
+	var w=30;
+	for(var i=1;i<aLi.length;i++)
+	{
+		aLi[i].style.left=oBox.offsetWidth-(aLi.length-i)*w+'px';
+	}
+	
+	for(var i=0;i<aLi.length;i++)
+	{
+		(function(index){
+			aLi[i].onmouseover=function(){
+				for(var i=0;i<aLi.length;i++){
+					if(index>=i){
+						//aLi[i].style.left=w*i+'px';
+						move(aLi[i],{left:w*i});
+					}else{
+						//aLI[i].style.left=oBox.offsetWidth-(aLi.length-i)*w+'px';	
+						move(aLi[i],{left:oBox.offsetWidth-(aLi.length-i)*w});
+					}
+				}
+			};	
+		})(i);
+	}
+};
+</script>
+</head>
+
+<body style="background:#32353a;">
+<div id="box">
+	<ul>
+    	<li class="active"><img src="images/0.jpg" /><span style="background:#FF0;">第一项目</span></li>
+    	<li><img src="images/1.jpg" /><span style="background:red;">第二项目</span></li>
+    	<li><img src="images/2.jpg" /><span style="background:green;">第三项目</span></li>
+    	<li><img src="images/3.jpg" /><span style="background:pink;">第四项目</span></li>
+    </ul>
+</div>
+</body>
+</html>

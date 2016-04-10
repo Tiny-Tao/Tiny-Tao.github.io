@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+body { height:2000px; }
+div { position:fixed; _position:absolute; top:50%; margin-top:-75px; _margin-top:0; width:100px; height:150px; background:#ccc; }
+#left { left:0; }
+#right { right:0; }
+</style>
+<script>
+if(window.navigator.userAgent.indexOf('MSIE 6.0')!=-1){
+	window.onload=window.onscroll=window.onresize=function(){
+		var oRight=document.getElementById('right');
+		var oLeft= document.getElementById('left');
+		var scrollTop=document.documentElement.scrollTop;
+		var clientHeight=document.documentElement.clientHeight;
+		var top=(clientHeight-oLeft.offsetHeight)/2+scrollTop;
+		oLeft.style.top=top+'px';
+		oRight.style.top=top+'px';
+	};
+}
+</script>
+</head>
+
+<body style="background:#444;">
+	<div id="left"></div>
+	<div id="right"></div>
+</body>
+</html>

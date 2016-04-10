@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author"" />
+<meta name="copyright"" />
+<meta name="description" content="" />
+<title></title>
+<style>
+body{ background:#32353a;}
+*{ margin:0; padding:0; list-style:none;}
+#ul1{ width:408px; margin:50px auto; height:32px; text-align:center; background:#4e91c9; position:relative;}
+#ul1 li{ width:100px; height:30px; line-height:30px; border:1px solid #fff;float:left; color:#fff; position:relative; z-index:2;}
+#ul1 li.box{ position:absolute; left:0; top:0; background:#000; z-index:1; opacity:0.4;}
+</style>
+<script>
+
+window.onload=function(){
+	var oUl=document.getElementById('ul1');
+	var aLi=oUl.children;
+	var oBox=aLi[aLi.length-1];
+	
+	for(var i=0; i<aLi.length-1; i++){
+		aLi[i].onmouseover=function(){
+			startMove(oBox,this.offsetLeft);
+		};
+		
+		aLi[i].onmouseout=function(){
+			startMove(oBox,0);
+		};
+	}
+	(function(win){
+	var left=0;
+	var iSpeed=0;
+	var timer=null;
+	win.startMove=function(obj,iTarget){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			iSpeed+=(iTarget-left)/5;
+			iSpeed*=0.7;
+			
+			left+=iSpeed;
+			obj.style.left=left+'px';
+			
+			if(Math.round(iSpeed)==0 && Math.round(left)==iTarget){
+				clearInterval(timer);
+			}
+		},30);	
+	}
+})(this);
+};
+</script>
+</head>
+
+<body>
+<ul id="ul1">
+	<li>首页</li>
+    <li>联系我们</li>
+    <li>公司简介</li>
+    <li>产品展示</li>
+    <li class="box"></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+#box{ width:100px; height:100px; background:#ccc; position:absolute;top:30px;left:0;}
+</style>
+<script>
+window.onload=function(){
+	var oBox=document.getElementById('box');
+	var bLeft=false,bTop=false,bRight=false,bBottom=false;
+	setInterval(function(){
+		if(bLeft)
+		{
+			oBox.style.left=oBox.offsetLeft-10+'px';	
+		}	
+		if(bTop)
+		{
+			oBox.style.top=oBox.offsetTop-10+'px';	
+			
+		}	
+		if(bRight)
+		{
+			oBox.style.left=oBox.offsetLeft+10+'px';	
+		}	
+		if(bBottom)
+		{
+			oBox.style.top=oBox.offsetTop+10+'px';	
+			
+		}	
+	},30)
+	document.onkeydown=function(ev){
+		var oEvent=ev||event;
+		switch(oEvent.keyCode)
+		{
+			case 37:
+				bLeft=true;
+				break;
+			case 38:
+				bTop=true;
+				if((oEvent.keyCode==38)&&(oEvent.ctrlKey))
+				{
+					oBox.style.width=oBox.offsetWidth+10+'px';
+					oBox.style.height=oBox.offsetHeight+10+'px';
+					oBox.style.top=oBox.offsetWidth-5+'px';
+					oBox.style.left=oBox.offsetHeight-5+'px';	
+				}
+				break;
+			case 39:
+				bRight=true;
+				break;
+			case 40:
+				if((oEvent.keyCode==40)&&(oEvent.ctrlKey))
+				{
+					oBox.style.width=oBox.offsetWidth-10+'px';
+					oBox.style.height=oBox.offsetHeight-10+'px';
+					oBox.style.top=oBox.offsetHeight+5+'px';
+					oBox.style.left=oBox.offsetHeight+5+'px';	
+				}
+				bBottom=true;
+				break;
+		}	
+		if((oEvent.keyCode==49)&&(oEvent.ctrlKey))
+		{
+			oBox.style.background='red';	
+		}else if((oEvent.keyCode==50)&&(oEvent.ctrlKey)){
+			oBox.style.background='blue';
+		}else if((oEvent.keyCode==13)&&(oEvent.ctrlKey)){
+			window.location.reload();
+		}
+	};	
+	document.onkeyup=function(ev){
+		var oEvent=ev||event;
+		switch(oEvent.keyCode)
+		{
+			case 37:
+				bLeft=false;
+				break;
+			case 38:
+				bTop=false;
+				break;
+			case 39:
+				bRight=false;
+				break;
+			case 40:
+				bBottom=false;
+				break;
+		}		
+	};
+	
+};
+</script>
+</head>
+
+<body>
+请按↑↓←→键进行控制
+<div id="box"></div>
+</body>
+</html>

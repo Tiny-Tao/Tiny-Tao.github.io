@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>Document</title>
+<style>
+*{marign:0; padding:0;}
+#box{width:400px; height:400px; border:1px solid #000; margin:100px auto; overflow:hidden;}
+#div1{width:385px; height:100%;float:left; position:relative; top:0; left:0; overflow:hidden;}
+#cont{width:385px; position:absolute; top:0; left:0;}
+#div2{width:15px; height:100%;float:left; background:gray; top:0; left:0; position:relative; }
+#bar{position:absolute; width:15px; height:50px; background:#6CF; top:0; left:0; border-radius:5px}
+</style>
+<script src="wheel.js"></script>
+<script>
+window.onload=function(){
+	var oBox = document.getElementById('box');
+	var oDiv1 = document.getElementById('div1');
+	var oDiv2 = document.getElementById('div2');
+	var oCont = document.getElementById('cont');
+	var oBar = document.getElementById('bar');
+	oBar.onmousedown=function(ev){
+		var oEvent = ev||event;
+		var disY = oEvent.clientY-oBar.offsetTop;
+		document.onmousemove=function(ev){
+			var oEvent = ev||event;
+			var t = oEvent.clientY-disY;
+			setTop(t);
+		};
+		document.onmouseup=function(){
+			document.onmousemove=null;
+			document.onmouseup=null;
+			oBar.releaseCapture&&oBar.releaseCapture();
+		};
+		oBar.setCapture&&oBar.setCapture();
+		return false;
+	};
+	function setTop(t){
+		if(t<0){
+			t=0;
+		}else if(t>oDiv2.offsetHeight-oBar.offsetHeight){
+			t=oDiv2.offsetHeight-oBar.offsetHeight;
+		}
+		oBar.style.top=t+'px';
+		var scale = t/(oDiv2.offsetHeight-oBar.offsetHeight);
+		oCont.style.top=-scale*(oCont.offsetHeight-oDiv1.offsetHeight)+'px';
+	}
+	
+	addWheel(oBox,function(bOk){
+		var t = oBar.offsetTop;
+		if(bOk){
+			t+=10;
+		}else{
+			t-=10;
+		}
+		setTop(t);
+	});
+};
+</script>
+</head>
+
+<body>
+<div id="box">
+	<div id="div1">
+    	<div id="cont">
+        5月14日，中国国家主席习近平陪同印度总理莫迪参观西安大慈恩寺。中新社发 盛佳鹏 摄
+　　中新社西安5月15日电 题：习近平西安做东 莫迪领略盛唐风
+
+　　中新社记者 欧阳开宇 冽玮
+
+　　古城楼永宁门外，盛唐武士和宫女列队迎接，印度总理莫迪获赠通关文牒和“金钥匙”。
+
+　　这里是莫迪访华首站西安，当莫迪14日下午在东道主为其举办的入城仪式上收到上述两件礼物时，中国国家主席习近平正在不远处的城墙箭楼迎接他。
+
+　　带有浓厚盛唐元素的入城仪式被称为“天下第一礼”。永宁门外，莫迪以行进方式体验“下车入账”、“御道前行”、“迎宾唱诵”、“出城相迎”等环节。
+
+　　东道主的安排不止于此，晚些时候，习近平还与莫迪一起观看了体现中印两大文明交相辉映的文艺演出《梦长安》。
+
+　　莫迪当天上午抵达西安开始他对中国的访问。接下来的三天，西安、北京、上海，莫迪将以旋风式的节奏和中国社会各界进行全方位接触。
+
+　　在西安，莫迪的行程丰富而紧凑，抵达酒店稍事休息后，他便兴致勃勃地参观了秦始皇兵马俑、大兴善寺。
+
+　　在秦始皇兵马俑博物馆，莫迪参观了一号坑、三号坑和铜车马坑。在秦兵马俑一号坑，气势磅礴的“地下军事博物馆”令莫迪一行印象深刻。
+
+　　莫迪对千年秦俑兴趣浓厚。步入文物修复区，他围着呈现半碎片化的陶俑、陶马，仔细观看。在秦代兵器展厅，他驻足许久，赞叹2000多年前的青铜宝剑依然闪烁着锋锐的光芒。
+
+　　待到下午，莫迪的活动就有习近平亲自陪同，在入城仪式前，习近平先是与莫迪举行会见，然后中印领导人又一起参观大慈恩寺，同登大雁塔。
+
+　　“今天，我们如约在我的家乡相会，感到格外高兴。这是我第一次在我的家乡接待外国领导人。”习近平在会见开场白时就提及这次“打破惯例”的活动。
+
+　　中国最高领导人在首都北京以外的城市专程会见外国元首，尽管这样的安排在中国外交史上并非首次，但仍属罕见。
+
+　　如果说外国领导人去上海是为了看现代化的中国，那么去西安无疑就是感受中国的历史。虽然西安已成为很多外国元首、政要到访中国的必到之地，但莫迪此行首站定在西安，又有特殊的意义。外界普遍认为，有两个原因促成此次“打破惯例”的活动，一是西安是丝绸之路的起点，二是这里是习近平家乡。
+
+　　习近平去年对印度进行国事访问，首站去了莫迪的故乡——古吉拉特邦。到访当天正是莫迪64岁生日，他亲自安排并陪同习近平访问自己的家乡。期间，习近平向莫迪发出邀请：下次访问中国时到他的家乡西安去看看。
+
+　　中印领导人这种互访家乡的安排，可视为一次外交上“礼尚往来”的举动，从中透露出两国领导人关系亲密友好的信息。莫迪此次“履约”而来，两国领导人自是谈得融洽。
+
+　　会见中，两国领导人都对前景表示乐观，正如习近平对莫迪说，相信你这次访问将会推动中印战略合作伙伴关系取得新进展。莫迪也表示，愿同中方共同努力，将两国关系提高到新的历史水平。
+
+　　宝寺庄严，梵音可闻。双边会见之后，习近平在大慈恩寺内迎接莫迪。中印两国领导人先后参观了大雄宝殿、大雁塔、玄奘三藏院。
+
+　　位于大慈恩寺内的大雁塔，距今1360余年，是取经归来的玄奘法师为保存由天竺经丝绸之路带回长安的经卷和佛像而修建。参观期间，中印两国领导人一同登上大雁塔，远眺西安市景。习近平表示，去年你专程陪同我访问你的家乡古吉拉特邦，介绍中国唐代高僧玄奘在古吉拉特邦研习佛经的情况。玄奘法师回国后，就在这座大慈恩寺翻译佛经。大慈恩寺是中印悠久友好交往的历史见证。
+        </div>
+    </div>
+    <div id="div2">
+    	<div id="bar"></div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

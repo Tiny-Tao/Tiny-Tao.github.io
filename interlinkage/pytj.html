@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title></title>
+<style>
+body {text-align:center;}
+</style>
+<script>
+	// b-北,保,包
+window.onload=function (){
+	var oTxt1=document.getElementById('txt1');
+	var oTxt2=document.getElementById('txt2');
+	var oBtn=document.getElementById('btn1');
+	
+	oBtn.onclick=function (){
+		var arr=oTxt1.value.split(',');
+		
+		var json={};
+		for (var i=0; i<arr.length; i++)
+		{
+			// 北-bei
+			var aTmp=arr[i].split('-');
+			var pY=aTmp[1].charAt(0);
+			var word=aTmp[0];
+			
+			if (pY in json)
+			{
+				json[pY]+=','+word;
+			}
+			else
+			{
+				json[pY]=word;
+			}
+		}
+		
+		// alert(JSON.stringify(json));
+		/*
+			{
+				j:'北,包，保'
+				
+			}
+		*/
+		
+		var arr2=[];
+		for (var i in json)
+		{
+			// i -> j b 
+			// json[i] -> '别，包，嗷'
+			// j- '别，包，嗷'
+			arr2.push(i+"-'"+json[i]+"'");
+		}
+		
+		// alert(arr2);
+		oTxt2.value=arr2.join('\n');
+	};
+};
+</script>
+</head>
+
+<body style="background:#444;">
+输入原始文本(空格隔开)：<br>
+<textarea style="width:300px; height:200px;" id="txt1">北-bei,京-jing,上-shang,海-hai,广-guang,深-shen,济-ji,湖-hu,襄-xiang,湘-xiang,株-zhu,包-bao,保-bao</textarea><br>
+<br>
+<input type="button" value="变" id="btn1" /><br>
+<br>
+这里输出结果：<br>
+<textarea style="width:300px; height:200px;" id="txt2"></textarea>
+</body>
+</html>
